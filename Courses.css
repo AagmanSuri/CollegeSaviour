@@ -1,0 +1,19 @@
+h1{
+    
+    color:white;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+.profile{
+    color:white;
+}
+
+.row{
+    margin-top: 50px;
+    text-align: center;
+}
+.one{
+    border: 2px solid white;
+}
