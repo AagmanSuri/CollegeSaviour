@@ -8,26 +8,42 @@
 
 
     <title>Login Page</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+<script src="form.js"></script>
   </head>
   <body>
     
-    <div class= "loginbox">
+    <div id= "formContainer" class= "loginbox">
       <img src="picture.png" class="picture">
+      
+      
       <h1>Login Here</h1>
-      <form>
+
+
+
         <p>Enter Email</p>
-        <input type="email" name="" placeholder="Enter email">
+        <input type="email" placeholder="email" id="email"/>
+       
         
         <p>Password</p>
+        <input type="password" placeholder="password" id="password"/>
         
-        <input type="password" name="" placeholder="Enter Password">
-        
+        <!-- <input type="submit" name="" value="Login"> -->
+        <button onclick="signUp()" id="signUp">Sign Up</button>
+        <button onclick="signIn()" id="signIn">Sign In</button>
+        <button onclick="signOut()" id="signOut">Sign Out</button>
      
-      </form>
+      
+
+
+
       <!-- take these links above in the form  -->
-      <a href ="Dashboard.html"><input type="submit" name="" value="Login"></a>
-      <a href="#">Forgot your Password ?</a><br>
-      <a href="#">Don't have an account ?</a>
+      <!-- <a href ="Dashboard.html"></a> -->
+      <!-- <a href="#">Forgot your Password ?</a><br>
+      <a href="#">Don't have an account ?</a> -->
       <!-- take these links above in the form  -->
 
     </div>
