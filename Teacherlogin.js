@@ -35,7 +35,7 @@
 		
 		const promise = auth.signInWithEmailAndPassword(email.value, password.value);
 		promise.catch(e => alert(e.message));
-		// window.location = 'Dashboard.html';
+		
 
 		
 		
@@ -61,7 +61,7 @@
 			
 		
 			//Take user to a different or home page
-             window.location = 'dashboard.html';
+            window.location = 'Dashboard2.html';
 
 			//is signed in
 			
@@ -74,5 +74,3 @@
 		
 		
 	});
-	
-
