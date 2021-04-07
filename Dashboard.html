@@ -8,6 +8,11 @@
 
 <title>DashBoard</title>
 
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+<script src="Dashboard.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark ">
@@ -43,7 +48,7 @@
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
            </form>  -->
-           <a href="index.html"><button class="btn btn-outline-light" type="submit">Sign Out</button></a>
+           <a href="index.html"><button onclick="signOut()" id="signOut" class="btn btn-outline-light" type="submit">Sign Out</button></a>
            
           </div>
         </div>
