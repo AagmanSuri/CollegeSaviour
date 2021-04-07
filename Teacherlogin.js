@@ -1,12 +1,12 @@
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyDw6hB2DFotDtiCcm4mx-9R-bG0erzhP7Q",
-    authDomain: "project-9a95d.firebaseapp.com",
-    projectId: "project-9a95d",
-    storageBucket: "project-9a95d.appspot.com",
-    messagingSenderId: "780279272958",
-    appId: "1:780279272958:web:42d0bd661d46c093c69caf"
+    apiKey: "AIzaSyDpcsXvZu_IleiVqYMmdH7cqTUP6JWX9MI",
+    authDomain: "teacher-5d8ee.firebaseapp.com",
+    projectId: "teacher-5d8ee",
+    storageBucket: "teacher-5d8ee.appspot.com",
+    messagingSenderId: "815082225938",
+    appId: "1:815082225938:web:017ed3c781320e601773cb"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -35,7 +35,7 @@
 		
 		const promise = auth.signInWithEmailAndPassword(email.value, password.value);
 		promise.catch(e => alert(e.message));
-		
+		// window.location = 'Dashboard.html';
 
 		
 		
@@ -61,7 +61,7 @@
 			
 		
 			//Take user to a different or home page
-            window.location = 'dashboard.html';
+             window.location = 'dashboard.html';
 
 			//is signed in
 			
