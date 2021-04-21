@@ -50,6 +50,22 @@
 		alert("Signed Out");
 		
 	}
+
+	function sendPasswordReset() {
+		var auth = firebase.auth();
+		// var emailAddress = "suriaagman@gmail.com";
+		var emailAddress = document.getElementById("email");
+		console.log(emailAddress.value);
+		auth.sendPasswordResetEmail(emailAddress.value)
+			.then(function () {
+				// Email sent.
+				alert("Reset link for email : "+emailAddress.value+" "+"has been sent.")
+			})
+			.catch(function (error) {
+				// An error happened.
+				console.log(error)
+			});
+	}
 	
 	
 	
