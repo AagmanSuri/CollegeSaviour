@@ -5,58 +5,34 @@
   <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <style>
-    body {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 13px;
-      display: flex;
-      flex-direction: column;
-      max-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-
-    .members-count,
-    .members-list,
-    .messages {
-      border: 1px solid #e4e4e4;
-      padding: 15px;
-      margin-bottom: 15px;
-    }
-
-    .messages {
-      flex-shrink: 1;
-      overflow: auto;
-    }
-
-    .message {
-      padding: 5px 0;
-    }
-    .message .member {
-      display: inline-block;
-    }
-
-    .member {
-      padding-right: 10px;
-      position: relative;
-    }
-
-    .message-form {
-      display: flex;
-      flex-shrink: 0;
-    }
-    .message-form__input {
-      flex-grow: 1;
-      border: 1px solid #dfdfdf;
-      padding: 10px 15px;
-      font-size: 16px;
-    }
-    .message-form__button {
-      margin: 10px;
-    }
-  </style>
+  <link href="/chat.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="Dashboard.html">College Saviour</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Home</a></li> -->
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="table.html">Time Table</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+  
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  
   <div class="members-count">-</div>
   <div class="members-list">-</div>
   <div class="messages"></div>
