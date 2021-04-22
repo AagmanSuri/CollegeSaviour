@@ -1,10 +1,12 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
+var b=prompt("Please Enter Your Name");
+console.log(b);
 const CLIENT_ID = 'eEsjRTlqvkPOwKL2';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getRandomName(),
+    name: b,
     color: getRandomColor(),
   },
 });
