@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Time Table</title>
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script> 
 </head>
 
 <body>
-
+<form>
     Subject Code <input id="codebox" type="text" required></input> <br> <br>
     Link B1 <input id="b1box" type="text"></input> <br> <br>
     Link B2 <input id="b2box" type="text"></input> <br> <br>
     Link B3 <input id="b3box" type="text"></input> <br> <br>
     Link B4 <input id="b4box" type="text"></input> <br> <br>
-
+    <input type="reset" value="reset">
+</form>
     <button id="insert">Insert</button>
     <button id="select">Show Links</button>
-    <button id="update">Update</button>
-    <button id="delete">Delete</button>
+    <button id="update">Update any link</button>
+    <button id="delete">Delete this subject</button>
 
 
 
