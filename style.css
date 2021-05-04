@@ -26,6 +26,7 @@ body{
     left: calc(50% - 50px);
 
 }
+
 h1{
     margin: 0;
     padding:0 0 20px;
@@ -38,6 +39,7 @@ h1{
     padding:0;
     font-weight: bold;
 }
+
 
 .loginbox input{
     width:100%;
@@ -61,6 +63,18 @@ h1{
     font-size:18px;
     border-radius:20px;
 
+}
+.b{
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+.c{
+    margin-left:-1rem;
+}
+.d{
+    margin-top: 0.5rem;
+    margin-left: 5rem;
 }
 .sign:hover{
     cursor:pointer;

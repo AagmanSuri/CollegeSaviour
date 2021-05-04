@@ -1,57 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 
-    <title>Login Page</title>
+  <title>Login Page</title>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
-<script src="form.js"></script>
-  </head> 
-  <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+  <script src="form.js"></script>
+</head>
+
+<body>
+  <div id="formContainer" class="loginbox">
+    <img src="picture.png" class="picture">
+
+
+    <h1>Login</h1>
+
+
+
+    <p>Enter Email</p>
+    <input type="email" placeholder="email" id="email" />
+
+
+    <p>Password</p>
+    <input type="password" placeholder="password" id="password" />
+    <button class="c btn btn-link" onclick="sendPasswordReset()" id="sendPasswordReset">Reset Password</button>
+    <!-- <input type="submit" name="" value="Login"> -->
+    <button class="b btn btn-danger" onclick="signUp()" id="signUp">Sign Up</button>
+    <button class=" btn btn-danger" onclick="signIn()" id="signIn">Sign In</button>
+    <a href="index.html"><button class="d btn btn-danger">Go Back</button></a>
     
-    <div id= "formContainer" class= "loginbox">
-      <img src="picture.png" class="picture">
-      
-      
-      <h1>Login Here</h1>
+    <!-- <button onclick="signOut()" id="signOut">Sign Out</button>  -->
 
 
-
-        <p>Enter Email</p>
-        <input type="email" placeholder="email" id="email"/>
-       
-        
-        <p>Password</p>
-        <input type="password" placeholder="password" id="password"/>
-        
-        <!-- <input type="submit" name="" value="Login"> -->
-        <button onclick="signUp()" id="signUp">Sign Up</button>
-        <button onclick="signIn()" id="signIn">Sign In</button>
-         <!-- <button onclick="signOut()" id="signOut">Sign Out</button>  -->
-        <button onclick="sendPasswordReset()" id="sendPasswordReset">Reset Password</button>
-
-
-
-      <!-- take these links above in the form  -->
-      <!-- <a href ="Dashboard.html"></a> -->
-      <!-- <a href="#">Forgot your Password ?</a><br>
+    <!-- take these links above in the form  -->
+    <!-- <a href ="Dashboard.html"></a> -->
+    <!-- <a href="#">Forgot your Password ?</a><br>
       <a href="#">Don't have an account ?</a> -->
-      <!-- take these links above in the form  -->
+    <!-- take these links above in the form  -->
 
-    </div>
+  </div>
 
 
-    
-    <!-- <script type="text/javascript" src="script.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-   
-  </body>
+
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+  </script>
+
+</body>
+
 </html>

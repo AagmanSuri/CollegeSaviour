@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script> 
+</head>
+
+<body>
+    <div hidden>
+<form>
+    Subject Code <input id="codebox" type="text" required></input> <br> <br>
+    Link B1 <input id="b1box" type="text"></input> <br> <br>
+    Link B2 <input id="b2box" type="text"></input> <br> <br>
+    Link B3 <input id="b3box" type="text"></input> <br> <br>
+    Link B4 <input id="b4box" type="text"></input> <br> <br>
+    <input type="reset" value="reset">
+</form>
+    <button id="insert">Insert</button>
+    <button id="select">Show Links</button>
+    <button id="update">Update any link</button>
+    <button id="delete">Delete this subject</button>
+
+    </div>
+
+    <h1>Time Table</h1>
+    <table>
+        <thead>
+            <th>Subject code</th>
+            <th>b1Link</th>
+            <th>b2Link</th>
+            <th>b3Link</th>
+            <th>b4Link</th>
+        </thead>
+        <tbody id="tbody1">
+
+        </tbody>
+    </table>
+
+    <script src="time.js"></script>
+
+</body>
+
+</html>

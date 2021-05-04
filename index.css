@@ -9,20 +9,22 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    /* background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
 }
 
 * {
 	font-family: "Montserrat", sans-serif !important;
 }
-body {
+
+
+/* body {
 	background: linear-gradient(-45deg, #e6a895, #ce7999, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	-webkit-animation: gradient 15s ease infinite;
 	        animation: gradient 15s ease infinite;
-}
-
+} */
+/* 
 @-webkit-keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -45,4 +47,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
