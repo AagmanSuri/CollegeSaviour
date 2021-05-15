@@ -68,6 +68,7 @@ document.getElementById("delete").onclick = function () {
 function SelectAllData() {
     firebase.database().ref('subject').on("value",
         function (AllRecords) {
+            // console.log(AllRecords.val());
             AllRecords.forEach(
                 function (CurrentRecord) {
                     var sub=CurrentRecord.val().SubjectCode;
@@ -75,29 +76,33 @@ function SelectAllData() {
                     var blink2 = CurrentRecord.val().B2Link;
                     var blink3 = CurrentRecord.val().B3Link;
                     var blink4 = CurrentRecord.val().B4Link;
-                    AddItemsToTable(sub,blink1, blink2, blink3, blink4);
+                   
+                   AddItemsToTable(sub,"sba",blink1, blink2, blink3, blink4);
+                   
                 }
             );
-
+            
         });
+       
 }
 window.onload= SelectAllData;
 
 //.............filling the table...........//
-function AddItemsToTable(sub,blink1, blink2, blink3, blink4){
-    var tbody=document.getElementById(tbody1);
-    var trow=document.createElement("tr");
+function AddItemsToTable(sub,b1 ,blink1, blink2, blink3, blink4){
+    console.log(sub,blink1, blink2, blink3, blink4);
+    var tbody=document.getElementById("tbody1");//Quoted value to be inputed
+    var trow=document.createElement('tr');
     var td1=document.createElement('td');
     var td2=document.createElement('td');
     var td3=document.createElement('td');
-    var td4=document.createElement('td');
+    var td4=document.createElement('td'); 
     var td5=document.createElement('td');
 
     td1.innerHTML=sub;
-    td2.innerHTML=blink1;
-    td3.innerHTML=blink2;
-    td4.innerHTML=blink3;
-    td5.innerHTML=blink4;
+    td2.innerHTML="<a href='"+blink1 +"' >"+  sub+" b1" +"</a>";
+    td3.innerHTML="<a href='"+blink2 +"' >"+  sub+" b2" +"</a>";
+    td4.innerHTML="<a href='"+blink2 +"' >"+  sub+" b3" +"</a>";
+    td5.innerHTML="<a href='"+blink2 +"' >"+  sub+" b4" +"</a>";
 
     
     trow.appendChild(td1);

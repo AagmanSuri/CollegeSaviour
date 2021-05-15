@@ -1,6 +1,15 @@
-var b=prompt("Please Enter Your Name");
-console.log(b);
-const CLIENT_ID = 'eEsjRTlqvkPOwKL2';//channel id 
+document.onload = function(){
+var b = prompt("Please Enter Your Name");
+if (b == " ") {
+  var b = prompt("Please Enter a Valid Name");
+  console.log("this functoion is getting exe")
+} 
+else {
+  console.log(b);
+}
+};
+
+const CLIENT_ID = 'eEsjRTlqvkPOwKL2'; //channel id 
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
@@ -35,7 +44,9 @@ drone.on('open', error => {
     updateMembersDOM();
   });
 
-  room.on('member_leave', ({id}) => {
+  room.on('member_leave', ({
+    id
+  }) => {
     const index = members.findIndex(member => member.id === id);
     members.splice(index, 1);
     updateMembersDOM();
@@ -97,7 +108,10 @@ function sendMessage() {
 }
 
 function createMemberElement(member) {
-  const { name, color } = member.clientData;
+  const {
+    name,
+    color
+  } = member.clientData;
   const el = document.createElement('div');
   el.appendChild(document.createTextNode(name));
   el.className = 'member';
