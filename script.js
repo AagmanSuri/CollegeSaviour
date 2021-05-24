@@ -1,14 +1,4 @@
-document.onload = function(){
-var b = prompt("Please Enter Your Name");
-if (b == " ") {
-  var b = prompt("Please Enter a Valid Name");
-  console.log("this functoion is getting exe")
-} 
-else {
-  console.log(b);
-}
-};
-
+var b = prompt("Please Enter a Valid Name");
 const CLIENT_ID = 'eEsjRTlqvkPOwKL2'; //channel id 
 
 const drone = new ScaleDrone(CLIENT_ID, {
